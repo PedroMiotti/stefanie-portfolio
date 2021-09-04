@@ -2,20 +2,8 @@ import './style.css';
 
 // Assets
 import StefImage2 from '../../assets/img/steHomeImage.svg'
-import ScrollAnimation from '../../assets/animations/scroll.json';
-
-import Lottie from "react-lottie";
 
 const Home = () => {
-
-    const scrollAnimationOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: ScrollAnimation,
-        rendererSettings: {
-            preserveAspectRatio: "xMidYMid slice",
-        },
-    };
 
     return (
         <div className="home-container">
