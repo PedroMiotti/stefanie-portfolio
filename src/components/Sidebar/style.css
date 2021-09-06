@@ -1,0 +1,57 @@
+.sidebar-navitems-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(75vw, 400px);
+    height: 100vh;
+    background-color: var(--darker-blue);
+    z-index: 2;
+
+}
+
+.sidebar-navitems-container .sidebar-navitems{
+    text-decoration: none;
+    color: #ddd;
+    font-family: var(--font-haleway);
+    padding: 48px;
+}
+
+.curriculum-button-sidebar{
+    border: 1px solid #ddd;
+    padding: 10px ;
+    font-family: var(--font-haleway);
+    color: #ddd;
+    text-decoration: none;
+    width: 60%;
+    text-align: center;
+}
+
+.curriculum-button-sidebar:hover{
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.sidebar-blur{
+    width: 100vh;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    background-color: var(--dark-blue);
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+    opacity: 0.6;
+}
+
+@media only screen and (min-width: 766px){
+    .sidebar-navitems-container{
+        display: none;
+    }
+}

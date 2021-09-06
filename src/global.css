@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--darker-blue);
+}
+
+:root{
+    --darker-blue: #17202a;
+    --dark-blue: #243442;
+    --blue: #4361ee;
+
+    --font-haleway: 'Raleway', sans-serif; /* Weights: 100, 200, 400, 900 */
+}

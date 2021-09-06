@@ -1,0 +1,53 @@
+.social-line-container{
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+}
+
+.social-line-container::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: #a8b2d1;
+}
+
+
+.linkedin-icon-container a{
+    text-decoration: none;
+    color: #ddd;
+    padding: 8px;
+
+}
+
+.linkedin-icon-container a svg{
+    width: 20px;
+}
+
+.linkedin-icon-container:hover{
+    color: var(--blue) ;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+
+.linkedin-icon-container a svg:hover{
+    color: var(--blue);
+}
+
+@media only screen and (max-width: 1430px) {
+    .social-line-container{
+        position: absolute;
+        left: 20px;
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 765px){
+    .social-line-container{
+        display: none;
+    }
+}
+
+
