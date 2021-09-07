@@ -33,12 +33,6 @@ const Home = () => {
                 </svg>
             </div>
 
-            <div className="scroll-line-container">
-                <Lottie
-                    options={scrollAnimationOptions}
-                    style={{width: 120}}
-                />
-            </div>
         </div>
     );
 };
