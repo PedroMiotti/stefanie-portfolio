@@ -2,12 +2,21 @@ import './style.css';
 
 // Assets
 import StefImage2 from '../../assets/img/steHomeImage.svg'
+import ScrollAnimation from '../../assets/animations/scroll.json';
 
-// Components
-import SocialLine from "./component/SocialLine";
-
+import Lottie from "react-lottie";
 
 const Home = () => {
+
+    const scrollAnimationOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: ScrollAnimation,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice",
+        },
+    };
+
     return (
         <div className="home-container">
             <div className="home-intro-text">
@@ -24,7 +33,12 @@ const Home = () => {
                 </svg>
             </div>
 
-            <SocialLine />
+            {/*<div className="scroll-line-container">*/}
+            {/*    <Lottie*/}
+            {/*        options={scrollAnimationOptions}*/}
+            {/*        style={{width: 120}}*/}
+            {/*    />*/}
+            {/*</div>*/}
         </div>
     );
 };

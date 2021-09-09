@@ -3,9 +3,11 @@
     justify-content: space-around;
     align-items: center;
     height: 100vh;
+    scroll-snap-type: y mandatory;
 }
 
 .home-intro-text{
+    scroll-snap-align: start;
     color: #ddd;
     width: 500px;
     height: auto;
@@ -38,6 +40,23 @@
     right: 0;
     z-index: -1;
     width: 600px;
+}
+
+.scroll-line-container{
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    z-index: 10;
+}
+
+
+.scroll-line-container::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: #a8b2d1;
 }
 
 @media only screen and (max-width: 1430px) {

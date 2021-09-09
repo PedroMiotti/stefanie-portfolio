@@ -25,13 +25,14 @@ const Navbar = () => {
                     Curriculum
                 </a>
             </div>
-
-            <div style={{zIndex: 3}}>
-                {width <= 765 ? (<Hamburger toggled={sidebarOpen} onToggle={(toogled) => setSidebarOpen(toogled)} color="#4361ee" rounded label="Show menu"/>) : null}
-            </div>
-
+            {width <= 765 ? (
+                <div style={{zIndex: 3}}>
+                    <Hamburger toggled={sidebarOpen} onToggle={(toogled) => setSidebarOpen(toogled)} color="#4361ee" rounded label="Show menu"/>
+                </div>
+            ) : null}
+            {width <= 765 ? (
             <Sidebar show={sidebarOpen} close={() => setSidebarOpen(!sidebarOpen)}/>
-
+            ) : null}
         </div>
     );
 }

@@ -32,6 +32,11 @@
     font-family: var(--font-haleway);
 }
 
+.navbar-navitems-container .navbar-navitems:hover{
+    cursor: pointer;
+    color: var(--blue)
+}
+
 .curriculum-button{
     border: 1px solid #ddd;
     padding: 10px 15px;

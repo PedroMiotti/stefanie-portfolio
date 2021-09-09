@@ -1,7 +1,9 @@
 .social-line-container{
-    position: absolute;
+    position: fixed;
     left: 50px;
     bottom: 0;
+    right: auto;
+    z-index: 10;
 }
 
 .social-line-container::after{

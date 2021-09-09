@@ -46,7 +46,7 @@
     z-index: 1;
     background-color: var(--dark-blue);
     filter: blur(50px);
-    -webkit-filter: blur(50px);
+    -webkit-filter: blur(400px);
     opacity: 0.6;
 }
 
