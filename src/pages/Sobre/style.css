@@ -1,6 +1,80 @@
 .sobre-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.sobre-content{
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    gap: 20%
+}
+
+.sobre-col1{
+    padding: 0 20px;
+    width: 50%;
+}
+
+.sobre-content-title{
+    color: #fff;
+    font-size: 18px;
+    font-family: var(--font-haleway);
+    margin-bottom: 30px;
+}
+
+.sobre-content-title h2 span{
+    color: var(--blue);
+}
+
+.sobre-content-row2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sobre-content-text{
+    width: 80%;
+    color: #b4b4b4;
+    font-weight: 200;
+    font-family: var(--font-haleway);
+}
+
+.sobre-facts-container{
+    margin-top: 30px;
+    display: flex;
+    gap: 20%;
+}
+
+.sobre-facts-child-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sobre-facts-row{
+    display: flex;
+    gap: 10px;
+}
+
+.sobre-facts-row p{
+    color: #ffffff;
+    font-family: var(--font-haleway);
+}
+
+.sobre-checked-icon{
+    width: 20px;
+    height: 20px;
+}
+
+
+.sobre-tools-container h4{
+    font-weight: 200;
+    font-family: var(--font-haleway);
+    color: #b4b4b4;
+}
+
+.sobre-tool-icon{
+    width: 38px;
 }

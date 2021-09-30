@@ -10,6 +10,7 @@ body{
     background-color: var(--darker-blue);
     overflow-x: hidden;
     position: relative;
+
 }
 
 :root{
