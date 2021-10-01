@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     height: 60%;
-    gap: 20%
+    /*gap: 20%*/
 }
 
 .sobre-col1{
@@ -45,6 +45,7 @@
     margin-top: 30px;
     display: flex;
     gap: 20%;
+    margin-bottom: 40px ;
 }
 
 .sobre-facts-child-container{
@@ -68,13 +69,39 @@
     height: 20px;
 }
 
+.sobre-tools-icons-container{
+    display: flex;
+    gap: 15px;
+}
 
-.sobre-tools-container h4{
+.sobre-subtitle{
     font-weight: 200;
     font-family: var(--font-haleway);
-    color: #b4b4b4;
+    color: #dcdcdc;
+    opacity: 0.3;
+    font-size: 15px;
+    margin-bottom: 20px ;
+}
+
+.sobre-linguas-all{
+    display: flex;
+    gap: 10px;
+}
+
+.sobre-linguas-all p{
+    color: #ffffff;
+    font-family: var(--font-haleway);
 }
 
 .sobre-tool-icon{
     width: 38px;
 }
+
+.sobre-col2 img{
+    width: 400px;
+    border-radius: 10px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+

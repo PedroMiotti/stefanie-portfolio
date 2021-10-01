@@ -6,6 +6,7 @@ import ExcelIcon from '../../assets/img/microsoft-excel.svg';
 import WordIcon from '../../assets/img/microsoft-word.svg';
 import PptIcon from '../../assets/img/microsoft-powerpoint.svg';
 import OutlookIcon from '../../assets/img/microsoft-outlook.svg';
+import SteImage from '../../assets/img/index.png';
 
 const Sobre = () => {
     return (
@@ -43,25 +44,41 @@ const Sobre = () => {
                                 </div>
                                 <div className="sobre-facts-row">
                                     <img className="sobre-checked-icon" src={Checked} alt="checked icon"/>
-                                    <p>Enstusiasmada</p>
+                                    <p>Enstusiasmada </p>
                                 </div>
                             </div>
 
                         </div>
-                    </div>
-                </div>
-                <div className="sobre-col2">
-                    <div className="sobre-tools-container">
-                        <h4>Ferramentas</h4>
-                        <div className="sobre-tools-icons-container">
-                            <img className="sobre-tool-icon" src={PhotoshopIcon} alt="checked icon"/>
-                            <img className="sobre-tool-icon" src={ExcelIcon} alt="checked icon"/>
-                            <img className="sobre-tool-icon" src={PptIcon} alt="checked icon"/>
-                            <img className="sobre-tool-icon" src={WordIcon} alt="checked icon"/>
-                            <img className="sobre-tool-icon" src={OutlookIcon} alt="checked icon"/>
+
+                        <div className="sobre-tools-container">
+                            <p className="sobre-subtitle" >- Ferramentas</p>
+                            <div className="sobre-tools-icons-container">
+                                <img className="sobre-tool-icon"  src={PhotoshopIcon} alt="checked icon"/>
+                                <img className="sobre-tool-icon" src={ExcelIcon} alt="checked icon"/>
+                                <img className="sobre-tool-icon" src={WordIcon} alt="checked icon"/>
+                                <img className="sobre-tool-icon" src={PptIcon} alt="checked icon"/>
+                                <img className="sobre-tool-icon" src={OutlookIcon} alt="checked icon"/>
+                            </div>
+
+                        </div>
+
+                        <div className="sobre-linguas-container">
+                            <p className="sobre-subtitle" >- Linguas</p>
+                            <div className="sobre-linguas-all">
+                                <p>Inglês</p>
+                                <p>{'│'}</p>
+                                <p>Alemão</p>
+                                <p>{'│'}</p>
+                                <p>Espanhol</p>
+                                <p>{'│'}</p>
+                                <p>Português</p>
+                            </div>
                         </div>
 
                     </div>
+                </div>
+                <div className="sobre-col2">
+                    <img src={SteImage} alt=""/>
                 </div>
             </div>
 
