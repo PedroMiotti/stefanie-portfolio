@@ -18,7 +18,7 @@ const Sidebar = ({show, close}) => {
                 </div>
             </Slide>
             <Fade right when={show}>
-                <div className="sidebar-blur" onClick={close}></div>
+                <div className="sidebar-blur" onClick={close} />
             </Fade>
         </>
 

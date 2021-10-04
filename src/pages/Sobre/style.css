@@ -8,8 +8,6 @@
 .sobre-content{
     display: flex;
     justify-content: center;
-    height: 60%;
-    /*gap: 20%*/
 }
 
 .sobre-col1{
@@ -39,13 +37,16 @@
     color: #b4b4b4;
     font-weight: 200;
     font-family: var(--font-haleway);
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 23px;
 }
 
 .sobre-facts-container{
     margin-top: 30px;
     display: flex;
     gap: 20%;
-    margin-bottom: 40px ;
+    margin-bottom: 20px ;
 }
 
 .sobre-facts-child-container{
@@ -64,7 +65,12 @@
     font-family: var(--font-haleway);
 }
 
+
 .sobre-checked-icon{
+    width: 20px;
+    height: 20px;
+}
+.sobre-facts-icon{
     width: 20px;
     height: 20px;
 }
@@ -75,11 +81,9 @@
 }
 
 .sobre-subtitle{
-    font-weight: 200;
+    font-weight: 900;
     font-family: var(--font-haleway);
-    color: #dcdcdc;
-    opacity: 0.3;
-    font-size: 15px;
+    color: #ffffff;
     margin-bottom: 20px ;
 }
 
@@ -97,11 +101,170 @@
     width: 38px;
 }
 
-.sobre-col2 img{
-    width: 400px;
-    border-radius: 10px;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
+
+.sobre-imagem-ste{
+    width: 500px;
+    height: 500px;
+    align-self: center;
 }
 
 
+
+@media screen and (max-height: 815px) {
+    .sobre-imagem-ste{
+        width: 440px;
+        height: 440px;
+    }
+
+    .sobre-content{
+        height: 65%;
+    }
+
+    .sobre-content-title{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .sobre-content-text{
+        width: 80%;
+        font-size: .9em;
+    }
+
+    .sobre-content-row2{
+        gap: 15px;
+    }
+
+    .sobre-facts-container{
+        margin-top: 20px;
+        margin-bottom: 20px ;
+    }
+
+    .sobre-facts-row p{
+        font-size: 15px;
+    }
+
+    .sobre-checked-icon{
+        width: 17px;
+        height: 17px;
+    }
+
+    .sobre-tools-container{
+        margin-bottom: 12px;
+    }
+
+    .sobre-tool-icon{
+        width: 35px;
+    }
+
+    .sobre-linguas-all p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-height: 630px) {
+    .sobre-facts-container{
+        margin-top: 10px;
+        margin-bottom: 10px ;
+    }
+
+    .sobre-tool-icon{
+        width: 30px;
+    }
+
+    .sobre-content-text{
+        width: 80%;
+        font-size: .88em;
+    }
+
+    .sobre-linguas-all p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .sobre-imagem-ste{
+        width: 400px;
+        height: 400px;
+    }
+
+    .sobre-content-text{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .sobre-imagem-ste{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .sobre-content{
+        justify-content: space-between;
+        padding: 0 35px;
+    }
+
+    .sobre-col1{
+        padding: 0 20px;
+        width:80%;
+    }
+
+    .sobre-imagem-ste{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .sobre-content{
+        justify-content: space-between;
+        padding: 0 35px;
+    }
+
+    .sobre-imagem-ste{
+        display: none;
+    }
+
+    .sobre-col1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        width: 100%;
+        padding: 0;
+    }
+
+    .sobre-content-row2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-content-text{
+        width: 100%;
+    }
+
+    .sobre-facts-container{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .sobre-linguas-container,
+    .sobre-tools-container{
+        width: 100%;
+    }
+
+    .sobre-linguas-all,
+    .sobre-tools-icons-container{
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    .sobre-content{
+        padding: 0 10px;
+    }
+}

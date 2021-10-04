@@ -31,7 +31,7 @@ const Navbar = () => {
                 </div>
             ) : null}
             {width <= 765 ? (
-            <Sidebar show={sidebarOpen} close={() => setSidebarOpen(!sidebarOpen)}/>
+                <Sidebar show={sidebarOpen} close={() => setSidebarOpen(!sidebarOpen)}/>
             ) : null}
         </div>
     );

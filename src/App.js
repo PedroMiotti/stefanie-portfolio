@@ -16,7 +16,7 @@ function App() {
         <div className="App">
             <Navbar/>
 
-            <ReactPageScroller>
+            <ReactPageScroller >
                 <Home/>
                 <Sobre/>
             </ReactPageScroller>
